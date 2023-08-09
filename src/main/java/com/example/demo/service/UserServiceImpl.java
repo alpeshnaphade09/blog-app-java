@@ -78,7 +78,7 @@ public class UserServiceImpl implements UserService{
 		
 		user.setPassword(encoder.encode(user.getPassword()));
 		
-		Role role = roleRepository.findById(AppConstants.NORMAL_USER).get();
+		Role role = roleRepository.findById(AppConstants.ROLE_NORMAL).get();
 		
 		user.getRoles().add(role);
 		

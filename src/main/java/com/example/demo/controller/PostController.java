@@ -80,7 +80,7 @@ public class PostController {
 	@GetMapping("/{pid}")
 	public ResponseEntity<PostDto> getPostById(@PathVariable Integer pid){
 		PostDto post = service.getPostById(pid);
-		return ResponseEntity.ok(post);
+		return new ResponseEntity<PostDto>(post, HttpStatus.OK);
 	}
 	
 	@DeleteMapping("/{pid}")

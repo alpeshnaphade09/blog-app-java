@@ -23,9 +23,9 @@ public class PostDto {
 	
 	private Date addedDate;
 	
-	private CategoryDto categoryDto;
+	private CategoryDto category;
 	
-	private UserDto userDto;
+	private UserDto user;
 	
 	private Set<CommentDto> comments = new HashSet<>();
 
